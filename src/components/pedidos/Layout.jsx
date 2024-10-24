@@ -33,9 +33,9 @@ const Layout = () => {
             </div>
 
 
-            <div className=" bg-gradient-to-r from-gray-100 to-gray-300 text-center  w-[62%] rounded-xl mt-2">
+            <div className=" bg-gradient-to-r from-gray-100 to-gray-300 text-center  w-[63%] rounded-xl mt-2">
               
-            <div className="flex flex-wrap justify-center mt-8">
+            <div className="flex flex-wrap  mt-8">
                 <Card/>
                 <Card/>
                 <Card/>
