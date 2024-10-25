@@ -15,19 +15,19 @@ const Tabs = () => {
         <img src={pollo} alt="pollo" className='h-[40px] w-40px] ' />
         </Link>
 
-        <Link className=' hover:bg-gray-900'>
+        <Link className=' hover:bg-gray-900 p-1'>
         <img src={complementos} alt="complementos" className='h-[40px] w-40px]' />
         </Link>
 
-        <Link >
+        <Link className='p-1' >
         <img src={bebidas} alt="bebidas" className='h-[40px] w-40px]' />
         </Link>
 
-        <Link >
+        <Link className='p-1' >
         <img src={postre} alt="postres" className='h-[40px] w-40px]  ' />
         </Link>
 
-        <Link >
+        <Link  className='p-1'>
         <img src={bread2} alt="extras"  className='h-[40px] w-40px]' />
         </Link>
 

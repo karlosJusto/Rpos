@@ -28,7 +28,7 @@ const Headear = () => {
                           <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                       </svg>
                   </div>
-                  <input type="search" id="default-search" className="block w-full p-2 ps-12 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-yellow-500 focus:border-yellow-500 dark:bg-gray-100 dark:border-gray-300 dark:placeholder-gray-400 dark:text-grey-500 dark:focus:ring-yellow-500 dark:focus:border-yellow-500" placeholder="  Buscar"  />
+                  <input type="search" id="default-search" className="block w-full p-2 ps-12 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-yellow-500"  />
                  
               </div>
            </form>
