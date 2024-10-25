@@ -15,7 +15,7 @@ const Tabs = () => {
         <img src={pollo} alt="pollo" className='h-[40px] w-40px] ' />
         </Link>
 
-        <Link className=' hover:text-gray-900'>
+        <Link className=' hover:bg-gray-900'>
         <img src={complementos} alt="complementos" className='h-[40px] w-40px]' />
         </Link>
 
