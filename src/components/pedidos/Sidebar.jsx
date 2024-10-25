@@ -16,39 +16,39 @@ const Sidebar = () => {
         
       <ul className=" flex flex-col justify-between text-center items-center mt-10 gap-6 ">
 
-              <Link className=" p-4 border-r-4 hover:border-r-yellow-500 active:border-r-yellow-500 " to={"/layout"}>
+              <Link className=" p-3 border-r-4 hover:border-r-yellow-500 active:border-r-yellow-500 " to={"/layout"}>
               <img src={Home} alt="icono cart side" className="w-12" />
               <p className="font-nunito text-xs text-gray-900 font-extrabold ">Home</p>
                </Link>
 
-               <Link className='p-4 border-r-4 hover:border-r-yellow-500' to={"/ordenes"}>
+               <Link className='p-3 border-r-4 hover:border-r-yellow-500' to={"/ordenes"}>
                <img src={ordenes} alt="icono cart side" className="w-12" />
                <p className="font-nunito text-xs text-gray-900 font-extrabold ">Ordenes</p>
                </Link>
 
-               <Link className='p-4 border-r-4 hover:border-r-yellow-500' to={"/freidora"}>
+               <Link className='p-3 border-r-4 hover:border-r-yellow-500' to={"/freidora"}>
                <img src={freidora} alt="icono cart side" className="w-12" />
                <p className="font-nunito text-xs text-gray-900 font-extrabold ">Freidora</p>
                </Link>
            
-               <Link className='p-4  border-r-4 hover:border-r-yellow-500' to={"/buscadorPedidos"}>
+               <Link className='p-3  border-r-4 hover:border-r-yellow-500' to={"/buscadorPedidos"}>
                <img src={buscador} alt="icono cart side" className="w-12" />
                <p className="font-nunito text-xs text-gray-900 font-extrabold ">Buscar</p>
                </Link>
 
                
 
-               <Link className='p-4  border-r-4 hover:border-r-yellow-500' to={"/stock"}> 
+               <Link className='p-3  border-r-4 hover:border-r-yellow-500' to={"/stock"}> 
                <img src={stock} alt="icono cart side" className="w-12" />
                <p className="font-nunito text-xs text-gray-900 font-extrabold ">Stock</p>
                </Link>
 
-               <Link className='p-4  border-r-4 hover:border-r-yellow-500' to={"/dashboard"}>
+               <Link className='p-3  border-r-4 hover:border-r-yellow-500' to={"/dashboard"}>
                <img src={dashboard} alt="icono cart side" className="w-12" />
                <p className="font-nunito text-xs text-gray-900 font-extrabold ">Dash</p>
                </Link>
 
-               <Link className='p-4 border-r-4 hover:border-r-yellow-500' to={"/onLine"}>
+               <Link className='p-3 border-r-4 hover:border-r-yellow-500' to={"/onLine"}>
                <img src={logout} alt="icono cart side" className="w-12" />
                <p className="font-nunito text-xs text-gray-900 font-extrabold ">LogOut</p>
                </Link>
