@@ -8,26 +8,26 @@ import { Link } from 'react-router-dom'
 const Tabs = () => {
   return (
 
-    <div className="text-sm font-medium text-center text-gray-500  border-gray-200 dark:text-gray-400 dark:border-gray-700">
-    <ul className="flex  justify-center -ms-44 gap-10 pb-2">
+    <div className="text-sm font-medium text-center  ">
+    <ul className="flex  justify-center -ms-44 gap-10 ">
 
-        <Link className="border-b-4 mt-1 p-1 hover:border-b-yellow-500 active:border-b-yellow-500">
-        <img src={pollo} alt="pollo" className='h-[40px] w-40px]' />
+        <Link className='hover:bg-yellow-500 p-1 rounded-md active:bg-yellow-600'  >
+        <img src={pollo} alt="pollo" className='h-[40px] w-40px] ' />
         </Link>
 
-        <Link className="border-b-4 mt-1 hover:border-b-yellow-500 ">
+        <Link className=' hover:text-gray-900'>
         <img src={complementos} alt="complementos" className='h-[40px] w-40px]' />
         </Link>
 
-        <Link className=" border-b-4 mt-1 hover:border-b-yellow-500 ">
+        <Link >
         <img src={bebidas} alt="bebidas" className='h-[40px] w-40px]' />
         </Link>
 
-        <Link className="border-b-4 mt-1 hover:border-b-yellow-500 ">
+        <Link >
         <img src={postre} alt="postres" className='h-[40px] w-40px]  ' />
         </Link>
 
-        <Link className="border-b-4 mt-1 hover:border-b-yellow-500 ">
+        <Link >
         <img src={bread2} alt="extras"  className='h-[40px] w-40px]' />
         </Link>
 
