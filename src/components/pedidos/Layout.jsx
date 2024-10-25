@@ -36,19 +36,7 @@ const Layout = () => {
             <div className=" bg-gradient-to-r from-gray-100 to-gray-300 text-center  w-[63%] rounded-xl mt-2">
               
             <div className="flex flex-wrap  mt-8">
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                
+               
             </div>
       </div>
 
