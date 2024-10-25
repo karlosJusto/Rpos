@@ -19,7 +19,7 @@ const Layout = () => {
          
           </header>
 
-          <nav className="mt-2">
+          <nav className="mt-0">
 
             <Tabs/>
 
