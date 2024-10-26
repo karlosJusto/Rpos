@@ -20,7 +20,7 @@ const Login = () => {
     };
   return (
     
-<section className="min-h-screen flex items-center justify-center font-nunito bg-gray-200">
+<section className="min-h-screen flex items-center justify-center font-nunito bg-gray-200 ">
 
     <div className="flex shadow-2xl ">
 
@@ -30,11 +30,11 @@ const Login = () => {
 
          
         <h4 className="text-4xl text-gray-500 font-extrabold font-nunito -mt-5 ">Bienvenido</h4>
-        <p className="font-medium text-lg text-gray-400 mt-2 font-nunito border-b-2 ">Introduce tu aPIN!</p>
+        <p className="font-medium text-lg text-gray-400 mt-2 font-nunito border-b-2 ">Introduce tu PIN!</p>
 
             <div className="flex flex-col text-2xl text-center p-4">
                 {/*input*/}         
-              <input type="password" maxLength={5} value={valorInput} readOnly  className="w-32 pl-2 pr-6 text-yellow-500 bg-white " />
+              <input type="password" maxLength={5} value={valorInput} readOnly  className="w-36 pl-2 pr-6 text-yellow-500 bg-white " />
 
             </div>
 
