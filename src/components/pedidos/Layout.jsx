@@ -25,7 +25,7 @@ const Layout = () => {
 
           </nav>
 
-           <div className=" flex h-screen">
+           <div className=" flex h-screen ">
               <div className=" w-[7%] ">
                 
               <Sidebar/>
