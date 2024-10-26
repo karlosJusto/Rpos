@@ -26,7 +26,7 @@ const Login = () => {
 
    
 
-     <div className="flex flex-col items-center justify-center text-center p-20  bg-white rounded-2xl xl:rounded-tr-none xl:rounded-br-none  ">
+     <div className="flex flex-col items-center justify-center text-center p-16  bg-white rounded-2xl xl:rounded-tr-none xl:rounded-br-none  ">
 
          
         <h4 className="text-5xl text-gray-500 font-extrabold font-nunito ">Bienvenido</h4>
@@ -38,7 +38,7 @@ const Login = () => {
 
             </div>
 
-            <div className="grid grid-cols-3  text-center items-center justify-center gap-4 font-nunito text-gray-500 font-extrabold ">
+            <div className="grid grid-cols-3  text-center items-center justify-center gap-3 font-nunito text-gray-500 font-extrabold ">
 
                 <div  onClick={() => handleClick('1')} className="p-7 border-2 rounded-2xl  hover:border-gray-300 hover:bg-yellow-500 active:scale-[0.98] active:duration-75 transition-all ease-in-out hover:scale-[1.01]">1</div>
                 <div  onClick={() => handleClick('2')} className="p-7 border-2 rounded-2xl  hover:border-gray-300 hover:bg-yellow-500 active:scale-[0.98] active:duration-75 transition-all ease-in-out hover:scale-[1.01]">2</div>
