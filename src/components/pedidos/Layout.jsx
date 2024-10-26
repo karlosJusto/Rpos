@@ -26,16 +26,16 @@ const Layout = () => {
           </nav>
 
            <div className=" flex h-screen ">
-              <div className=" w-[6%] ">
+              <div className=" w-[7%] ">
                 
               <Sidebar/>
                 
               </div>
 
 
-              <div className=" bg-gradient-to-r from-gray-100 to-gray-300 text-center  w-[63%] rounded-xl mb-40 overflow-y-auto ">
+              <div className=" bg-gradient-to-r from-gray-100 to-gray-300 text-center  w-[63%] rounded-xl overflow-y-auto ">
                 
-                      <div className="grid grid-cols-4  ">
+                      <div className="grid grid-cols-5  ">
 
                         <Card/>
                         <Card/>
@@ -57,7 +57,7 @@ const Layout = () => {
                       </div>
               </div>
 
-                <div className=" w-[30s%] ms-2 rounded-2xl ">
+                <div className=" w-[29%] ms-2 rounded-2xl ">
                 
                 <Ticket/>
                 
