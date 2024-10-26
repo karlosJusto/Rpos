@@ -35,7 +35,7 @@ const Layout = () => {
 
               <div className=" bg-gradient-to-r from-gray-100 to-gray-300 text-center  w-[63%] rounded-xl overflow-y-auto ">
                 
-                      <div className="grid grid-cols-5  ">
+                      <div className="grid grid-cols-4  ">
 
                         <Card/>
                         <Card/>
