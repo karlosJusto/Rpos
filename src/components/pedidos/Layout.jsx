@@ -13,7 +13,7 @@ const Layout = () => {
     
       <div className="3xl:container 2xl:mx-auto max-w-[1600px] ">
 
-          <header>
+          <header >
 
             <Headear/>
          
@@ -25,7 +25,7 @@ const Layout = () => {
 
           </nav>
 
-           <div className=" flex h-screen">
+           <div className=" flex ">
               <div className=" w-[7%] ">
                 
               <Sidebar/>
@@ -33,9 +33,9 @@ const Layout = () => {
               </div>
 
 
-              <div className=" bg-gradient-to-r from-gray-100 to-gray-300 text-center  w-[63%] rounded-xl ">
+              <div className=" bg-gradient-to-r from-gray-100 to-gray-300 text-center  w-[63%] rounded-xl overflow-x-auto ">
                 
-                      <div className="grid grid-cols-4 ">
+                      <div className="grid grid-cols-4  ">
 
                         <Card/>
                         <Card/>
@@ -47,12 +47,13 @@ const Layout = () => {
                         <Card/>
                         <Card/>
                         <Card/>
-                        <Card/>
+                    
+                      
                         
                       </div>
               </div>
 
-                <div className=" w-[29%] ms-2 rounded-2xl  min-w-[29%]">
+                <div className=" w-[29%] ms-2 rounded-2xl ">
                 
                 <Ticket/>
                 

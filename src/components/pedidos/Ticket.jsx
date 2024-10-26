@@ -17,23 +17,23 @@ const Ticket = () => {
   return (
           
     <>
-        <div className="w-full max-w-md h-screen p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 dark:bg-gray-100 dark:border-gray-100" onClick={handleShow}>
+        <div className="w-full max-w-md  p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 dark:bg-gray-100 dark:border-gray-100 " onClick={handleShow}>
           
+      <div>
+        <div  className="border-2 border-gray-400 p-4 rounded-xl font-nunito"  >
+                <div className="flex justify-between">
 
-      <div  className="border-2 border-gray-400 p-4 rounded-xl font-nunito"  >
-            <div className="flex justify-between">
-
-            <h1>NºPedido: <span className='font-extrabold'> 325</span></h1>
-            <h1>Entrega: <span className='font-extrabold'> 28/10/24 18:30</span> </h1>
-        </div>
-
-        <div className="flex justify-between mt-4 ">
-
-                <h1>Nombre: <span className='font-extrabold'>Carlos</span></h1>
-                <h1>Teléfono: <span className='font-extrabold'>666455827</span></h1>
+                <h1>NºPedido: <span className='font-extrabold'> 325</span></h1>
+                <h1>Entrega: <span className='font-extrabold'> 28/10/24 18:30</span> </h1>
             </div>
-     </div>
 
+            <div className="flex justify-between mt-4 ">
+
+                    <h1>Nombre: <span className='font-extrabold'>Carlos</span></h1>
+                    <h1>Teléfono: <span className='font-extrabold'>666455827</span></h1>
+                </div>
+            </div>
+     </div>  
      
 
 
