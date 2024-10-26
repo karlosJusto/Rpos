@@ -30,7 +30,7 @@ const Login = () => {
 
          
         <h4 className="text-4xl text-gray-500 font-extrabold font-nunito -mt-5 ">Bienvenido</h4>
-        <p className="font-medium text-lg text-gray-400 mt-2 font-nunito border-b-2 ">Introduce tu PIN!</p>
+        <p className="font-medium text-lg text-gray-400 mt-2 font-nunito border-b-2 ">Introduce tu aPIN!</p>
 
             <div className="flex flex-col text-2xl text-center p-4">
                 {/*input*/}         
