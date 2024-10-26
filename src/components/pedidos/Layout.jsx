@@ -26,7 +26,7 @@ const Layout = () => {
           </nav>
 
            <div className=" flex h-screen ">
-              <div className=" w-[7%] ">
+              <div className=" w-[6%] ">
                 
               <Sidebar/>
                 
@@ -57,7 +57,7 @@ const Layout = () => {
                       </div>
               </div>
 
-                <div className=" w-[29%] ms-2 rounded-2xl ">
+                <div className=" w-[30s%] ms-2 rounded-2xl ">
                 
                 <Ticket/>
                 
