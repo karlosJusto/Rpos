@@ -35,7 +35,7 @@ import { useState } from 'react'
 
              {/*tarjeta 1 */}
           <div className="p-4 max-w-sm">
-          <div className="flex rounded-lg h-full bg-white shadow-2xl p-8 flex-col">
+          <div className="flex rounded-lg  bg-white shadow-2xl p-8 flex-col">
               <div className="flex items-center justify-center mb-1">  
               <p className="text-black font-medium font-nunito">{textoRecordado}</p>
               </div>
@@ -66,7 +66,7 @@ import { useState } from 'react'
                 </div>
           </div>
    
-      <ModalProductos show={show} handleClose ={handleClose }/>
+      <ModalProductos show={show} handleClose ={handleClose}/>
    
     </div>
 

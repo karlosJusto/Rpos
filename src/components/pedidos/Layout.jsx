@@ -11,7 +11,7 @@ import Ticket from "./Ticket"
 const Layout = () => {
     return (
     
-      <div className="3xl:container 2xl:mx-auto max-w-[1600px] ">
+      <div className="3xl:container 2xl:mx-auto max-w-[1600px]  ">
 
           <header >
 
@@ -25,7 +25,7 @@ const Layout = () => {
 
           </nav>
 
-           <div className=" flex ">
+           <div className=" flex h-screen">
               <div className=" w-[7%] ">
                 
               <Sidebar/>
@@ -33,7 +33,7 @@ const Layout = () => {
               </div>
 
 
-              <div className=" bg-gradient-to-r from-gray-100 to-gray-300 text-center  w-[63%] rounded-xl overflow-x-auto ">
+              <div className=" bg-gradient-to-r from-gray-100 to-gray-300 text-center  w-[63%] rounded-xl mb-40 overflow-y-auto ">
                 
                       <div className="grid grid-cols-4  ">
 
@@ -47,7 +47,11 @@ const Layout = () => {
                         <Card/>
                         <Card/>
                         <Card/>
-                    
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
                       
                         
                       </div>

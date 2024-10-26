@@ -1,10 +1,7 @@
 /* eslint-disable react/prop-types */
 import patatassin from '../../assets/patatassin.png'
-
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-
-
 import singluten from '../../assets/singluten.png'
 import vegano from '../../assets/vegano.png'
 import vegetariano from '../../assets/vegetariano.png'
@@ -78,35 +75,35 @@ const ModalProductos = ({show, handleClose}) => {
 
        
 
-    <div class="p-2 text-left border-b-2 mt-4 ">
-        <h4 class="text-2xl  font-extrabold font-nunito">
+    <div className="p-2 text-left border-b-2 mt-4 ">
+        <h4 className="text-2xl  font-extrabold font-nunito">
             Opciones
         </h4>
      </div>
 
-     <div class="flex items-center p-5">
-    <button type="button" class="w-full border-l border-t border-b font-bold font-nunito rounded-l-xl  hover:bg-yellow-500 hover:text-white px-4 py-2">
+     <div className="flex items-center p-5">
+    <button type="button" className="w-full border-l border-t border-b font-bold font-nunito rounded-l-xl  hover:bg-yellow-500 hover:text-white px-4 py-2">
         Troceado
     </button>
-    <button type="button" class="w-full border font-nunito font-bold  hover:bg-yellow-500 hover:text-white px-4 py-2">
+    <button type="button" className="w-full border font-nunito font-bold  hover:bg-yellow-500 hover:text-white px-4 py-2">
         Tostado
     </button>
-    <button type="button" class="w-full border-t border-b border-r  rounded-r-xl font-nunito font-bold  hover:bg-yellow-500 hover:text-white px-4 py-2">
+    <button type="button" className="w-full border-t border-b border-r  rounded-r-xl font-nunito font-bold  hover:bg-yellow-500 hover:text-white px-4 py-2">
         Celiaco
     </button>
 </div>
 
-<div class="flex justify-center">
+<div className="flex justify-center">
     <nav
-        class="flex overflow-x-auto items-center p-1 space-x-1 rtl:space-x-reverse text-sm text-gray-600 bg-gray-500/5 rounded-xl">
+        className="flex overflow-x-auto items-center p-1 space-x-1 rtl:space-x-reverse text-sm text-gray-600 bg-gray-500/5 rounded-xl">
         <button role="tab" type="button"
-            class="flex whitespace-nowrap items-center h-8 px-5 font-medium rounded-lg outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-inset text-yellow-600 shadow bg-white dark:bg-yellow-600"
+            className="flex whitespace-nowrap items-center h-8 px-5 font-medium rounded-lg outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-inset text-yellow-600 shadow bg-white dark:bg-yellow-600"
             aria-selected="">
             Sin salsa
         </button>
 
         <button role="tab" type="button"
-            class="flex whitespace-nowrap items-center h-8 px-5 font-medium rounded-lg outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-inset hover:text-gray-800 focus:text-yellow-600 dark:text-gray-400 dark:hover:text-gray-300 dark:focus:text-gray-400">
+            className="flex whitespace-nowrap items-center h-8 px-5 font-medium rounded-lg outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-inset hover:text-gray-800 focus:text-yellow-600 dark:text-gray-400 dark:hover:text-gray-300 dark:focus:text-gray-400">
            Extra Salsa
         </button>
     </nav>
@@ -118,10 +115,10 @@ const ModalProductos = ({show, handleClose}) => {
        
         </Modal.Body>
         <Modal.Footer className='border-none'>
-          <Button variant="secondary" className='p-3' onClick={handleClose} >
+          <Button variant="secondary" className='p-3 bg-white font-nunito text-gray-500' onClick={handleClose} >
             Cancelar
           </Button>
-          <Button variant="primary" onClick={handleClose} className='bg-yellow-500 border-yellow-500 hover:bg-yellow-600 hover:border-yellow-600 p-3'>Agregar</Button>
+          <Button variant="primary" onClick={handleClose} className='bg-yellow-500 border-yellow-500 hover:bg-yellow-600 hover:border-yellow-600 p-3 font-nunito'>Agregar</Button>
         </Modal.Footer>
       </Modal>
 

@@ -2,7 +2,7 @@ import logo from '../../assets/logo.png';
 import Reloj from './Reloj'
 import { Link } from "react-router-dom";
 import notificacion from '../../assets/iconos_headear/notificacion.png'
-import airplay from '../../assets/iconos_headear/airplay.png'
+
 import config from '../../assets/iconos_headear/config.png'
 import carrito from '../../assets/iconos_headear/carrito.png'
 
@@ -21,7 +21,7 @@ const Headear = () => {
 
         <div className='mt-3 ms-20 '>
           <form className="max-w-md mx-auto">   
-              <label htmlFor="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-900">Search</label>
+              <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-900">Search</label>
               <div className="relative">
                   <div className="absolute inset-y-0 start-0 flex items-center ps-1 pointer-events-none">
                       <svg className="w-4 h-4 text-gray-900 dark:text-gray-400"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
