@@ -19,14 +19,14 @@ const Layout = () => {
          
           </header>
 
-          <nav className="mt-0 border-t-2 ">
+          <nav className="mt-0  ">
 
             <Tabs/>
 
           </nav>
 
            <div className=" flex h-screen">
-              <div className=" w-[7%]  ">
+              <div className=" w-[7%] ">
                 
               <Sidebar/>
                 
@@ -35,7 +35,7 @@ const Layout = () => {
 
               <div className=" bg-gradient-to-r from-gray-100 to-gray-300 text-center  w-[63%] rounded-xl ">
                 
-                      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 ">
+                      <div className="grid grid-cols-4 ">
 
                         <Card/>
                         <Card/>
@@ -52,7 +52,7 @@ const Layout = () => {
                       </div>
               </div>
 
-                <div className=" w-[29%] ms-2 rounded-2xl">
+                <div className=" w-[29%] ms-2 rounded-2xl  min-w-[29%]">
                 
                 <Ticket/>
                 

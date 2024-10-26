@@ -55,7 +55,7 @@ const Headear = () => {
         </Link>
 
         <Link>
-           <h1 className='p-2 border-2 rounded-xl bg-yellow-500 ring-yellow-500 font-nunito text-white'>100</h1>
+           <h1 className='p-2  rounded-xl bg-yellow-500 ring-yellow-500 font-nunito text-white'>100</h1>
         </Link>
 
     </div>

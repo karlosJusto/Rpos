@@ -20,39 +20,24 @@ const Ticket = () => {
         <div className="w-full max-w-md h-screen p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 dark:bg-gray-100 dark:border-gray-100" onClick={handleShow}>
           
 
-      <div  className="border-2 mt-4 border-gray-400 p-5 rounded-xl pb-6"  >
-        <div className="flex justify-around">
+      <div  className="border-2 border-gray-400 p-4 rounded-xl font-nunito"  >
+            <div className="flex justify-between">
 
-          <div className="relative z-0">
-              <input type="text" id="floating_standard" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
-              <label htmlFor="floating_standard" className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Nº Pedido</label>
-          </div>
+            <h1>NºPedido: <span className='font-extrabold'> 325</span></h1>
+            <h1>Entrega: <span className='font-extrabold'> 28/10/24 18:30</span> </h1>
+        </div>
 
-          <div className="relative z-0">
-              <input type="text" id="floating_standard" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
-              <label htmlFor="floating_standard" className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Hora</label>
-          </div>
-            
+        <div className="flex justify-between mt-4 ">
 
-          </div>
-
-          <div className="flex justify-around mt-10 ms-2">
-
-          <div className="relative z-0">
-              <input type="text" id="floating_standard" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
-              <label htmlFor="floating_standard" className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Nombre</label>
-          </div>
-
-          <div className="relative z-0">
-              <input type="text" id="floating_standard" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
-              <label htmlFor="floating_standard" className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Teléfono</label>
-          </div>
-
-      </div>
+                <h1>Nombre: <span className='font-extrabold'>Carlos</span></h1>
+                <h1>Teléfono: <span className='font-extrabold'>666455827</span></h1>
+            </div>
      </div>
 
+     
 
-          <p className="text-lg border-b-2 font-normal font-nunito text-gray-900 dark:text-gray-900 mt-10">Detalle del pedido.</p>
+
+          <p className="text-lg border-b-2 font-normal font-nunito text-gray-900 dark:text-gray-900 mt-4">Detalle del pedido.</p>
            <ul className="my-4 space-y-3">
             
               <li>

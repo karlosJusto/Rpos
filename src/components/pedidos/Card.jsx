@@ -66,11 +66,11 @@ import { useState } from 'react'
                 </div>
           </div>
    
-     
+      <ModalProductos show={show} handleClose ={handleClose }/>
    
     </div>
 
-    <ModalProductos show={show} handleClose={handleClose} />
+   
 
       </>       
    
