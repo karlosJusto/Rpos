@@ -26,15 +26,15 @@ const Login = () => {
 
    
 
-     <div className="flex flex-col items-center justify-center text-center p-16  bg-white rounded-2xl xl:rounded-tr-none xl:rounded-br-none  ">
+     <div className="flex flex-col items-center justify-center text-center p-12  bg-white rounded-2xl xl:rounded-tr-none xl:rounded-br-none  ">
 
          
-        <h4 className="text-5xl text-gray-500 font-extrabold font-nunito ">Bienvenido</h4>
+        <h4 className="text-4xl text-gray-500 font-extrabold font-nunito -mt-5 ">Bienvenido</h4>
         <p className="font-medium text-lg text-gray-400 mt-2 font-nunito border-b-2 ">Introduce tu PIN!</p>
 
-            <div className="flex flex-col text-2xl text-center p-5">
+            <div className="flex flex-col text-2xl text-center p-4">
                 {/*input*/}         
-              <input type="password" maxLength={5} value={valorInput} readOnly  className="w-24 pl-2 pr-6 text-yellow-500 bg-white " />
+              <input type="password" maxLength={5} value={valorInput} readOnly  className="w-32 pl-2 pr-6 text-yellow-500 bg-white " />
 
             </div>
 
@@ -90,7 +90,7 @@ const Login = () => {
            
         </div>
 
-            <img src={login} alt="" className='relative w-[450px] object-cover xl:rounded-tr-2xl xl:rounded-br-2xl xl:block hidden' />
+            <img src={login} alt="" className='relative w-[400px] object-cover xl:rounded-tr-2xl xl:rounded-br-2xl xl:block hidden' />
 
     </div>
 </section>
