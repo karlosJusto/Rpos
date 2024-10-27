@@ -19,6 +19,9 @@ import { dataContext } from '../Context/DataContext'
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+
+    
+
  
       const { data }=useContext(dataContext);
 
@@ -26,8 +29,6 @@ import { dataContext } from '../Context/DataContext'
       return data.map((product) => {
 
          {/*Limitamos el nombre al numero de caracteres*/}
-
-      console.log(JSON.stringify(product));
 
        const name= product.name;
        const maxCaracteres= 14;
@@ -55,6 +56,8 @@ import { dataContext } from '../Context/DataContext'
                     </div>
       
                     <div className="flex items-center justify-center mt-1  gap-3 pt-2">
+
+                     
                                   
                               <img src={vegano} alt="vegano" className="h-6 w-6 object-cover" />
                               <img src={singluten} alt="celiaco" className="h-6 w-6 object-cover"/>
