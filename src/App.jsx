@@ -7,14 +7,14 @@ import BuscadorPedidos from "./components/buscadorPedidos/BuscadorPedidos"
 import Stock from "./components/stock/Stock"
 import Dashboard from "./components/dashboard/Dashboard"
 import Layout from "./components/pedidos/Layout"
-
+import DataProvider from "./components/Context/DataContext"
 
 function App() {
   
 
   return (
-    
-    <BrowserRouter >
+    <DataProvider>
+     <BrowserRouter >
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -29,8 +29,8 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
 
       </Routes>    
-    </BrowserRouter>
-     
+     </BrowserRouter>
+    </DataProvider>
     
   )
 }
