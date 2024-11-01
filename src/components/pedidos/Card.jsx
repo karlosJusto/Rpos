@@ -47,7 +47,7 @@ import { dataContext } from '../Context/DataContext'
       
                     <div className="flex flex-col justify-between flex-grow">
                       
-                    <img src={product.imagen} alt={product.name} className='h-20 ' />
+                    <img src={product.imagen} alt={product.name} className='h-24' />
       
                     </div>
       
@@ -55,9 +55,9 @@ import { dataContext } from '../Context/DataContext'
 
                      
                                   
-                              <img src={vegano} alt="vegano" className="h-6 w-6 object-cover" />
-                              <img src={singluten} alt="celiaco" className="h-6 w-6 object-cover"/>
-                              <img src={vegetariano} alt="vegetariano" className="h-6 w-6 object-cover" />
+                              <img src={vegano} alt="vegano" className="h-4 w-4 object-cover" />
+                              <img src={singluten} alt="celiaco" className="h-4 w-4 object-cover"/>
+                              <img src={vegetariano} alt="vegetariano" className="h-4 w-4 object-cover" />
       
                     </div>
       
