@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect } from "react";
-import axios from "axios";
-
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../firebase/firebase";
 
 
 
@@ -11,7 +11,24 @@ const DataProvider = ({children}) => {
     const [data, setData]=useState([]);
 
     useEffect(() =>{
-        axios.get("data.json").then((res) => setData(res.data));
+
+        const productosRef = collection(db, "productos");
+
+        getDocs(productosRef)
+        .then((resp) => {
+
+          
+            setData(
+            resp.docs.map((doc) => {
+
+                return {...doc.data(), id: doc.id}
+
+
+            })
+        )
+
+        })
+        
         
     },[]);
 

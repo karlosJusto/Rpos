@@ -20,7 +20,7 @@ import { dataContext } from '../Context/DataContext'
     const handleShow = () => setShow(true);
 
 
-    
+
 
  
       const { data }=useContext(dataContext);
@@ -51,7 +51,7 @@ import { dataContext } from '../Context/DataContext'
       
                     <div className="flex flex-col justify-between flex-grow">
                       
-                    <img src={patatassin} alt="patatas" className='h-16 ' />
+                    <img src={product.imagen} alt="patatas" className='h-16 ' />
       
                     </div>
       
