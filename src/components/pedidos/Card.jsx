@@ -47,7 +47,7 @@ import { dataContext } from '../Context/DataContext'
       
                     <div className="flex flex-col justify-between flex-grow">
                       
-                    <img src={product.imagen} alt={product.name} className='w-40 h-24 ' />
+                    <img src={product.imagen} alt={product.name} className='h-20 ' />
       
                     </div>
       
