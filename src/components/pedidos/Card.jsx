@@ -28,11 +28,7 @@ import { dataContext } from '../Context/DataContext'
 
       return data.map((product) => {
 
-         {/*Limitamos el nombre al numero de caracteres*/}
-
-       const name= product.name;
-       const maxCaracteres= 14;
-       const textoRecordado=name.slice(0,maxCaracteres);
+       
 
         return (
           
@@ -45,13 +41,13 @@ import { dataContext } from '../Context/DataContext'
                 <div className="p-4 max-w-sm" >
                 <div className="flex rounded-lg  bg-white shadow-2xl p-8 flex-col">
                     <div className="flex items-center justify-center mb-1">  
-                    <p className="text-gray-500 font-extrabold text-lg font-nunito">{textoRecordado}</p>
+                    <p className="text-gray-500 font-extrabold truncate text-lg font-nunito">{product.name}</p>
                     </div>
       
       
                     <div className="flex flex-col justify-between flex-grow">
                       
-                    <img src={product.imagen} alt="patatas" className='h-16 ' />
+                    <img src={product.imagen} alt="patatas" className='h-20 ' />
       
                     </div>
       
