@@ -10,6 +10,7 @@ import { dataContext } from '../Context/DataContext'
 
 
 
+
   const Card = () => {
 
     {/*Estado modal*/}
@@ -45,7 +46,7 @@ import { dataContext } from '../Context/DataContext'
                     </div>
       
       
-                    <div className="flex flex-col justify-between ">
+                    <div className="flex flex-col justify-between flex-grow">
                       
                     <img src={product.imagen} alt={product.name} className='h-20' />
       
@@ -72,12 +73,12 @@ import { dataContext } from '../Context/DataContext'
                       </div>
                 </div>
          
-            <ModalProductos show={show} handleClose ={handleClose} />
+            
          
-            </div>
+          </div>
       
         
-      
+            <ModalProductos show={show} handleClose ={handleClose} />
             </>  
         ); 
     });

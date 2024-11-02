@@ -1,7 +1,9 @@
-/* eslint-disable react/prop-types */
+
 import patatassin from '../../assets/patatassin.png'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+
+
 import singluten from '../../assets/singluten.png'
 import vegano from '../../assets/vegano.png'
 import vegetariano from '../../assets/vegetariano.png'
@@ -46,7 +48,6 @@ const ModalProductos = ({show, handleClose}) => {
         </Modal.Header>
         <Modal.Body>
         
-      
         <div className='flex -mt-6 '>
             <img src={patatassin} alt="plato comida" className='w-52 h-42 object-cover pr-7' />
             <div>
@@ -56,13 +57,13 @@ const ModalProductos = ({show, handleClose}) => {
             </div>     
         </div>   
 
-        <div className="flex ms-[30px]  gap-3 p-3">
+            <div className="flex ms-[30px]  gap-3 p-3">
                             
                             <img src={vegano} alt="vegano" className="h-6 w-6 object-cover" />
                             <img src={singluten} alt="celiaco" className="h-6 w-6 object-cover"/>
                             <img src={vegetariano} alt="vegetariano" className="h-6 w-6 object-cover" />
     
-        </div>
+            </div>
 
       
     
@@ -81,34 +82,11 @@ const ModalProductos = ({show, handleClose}) => {
         </h4>
      </div>
 
-     <div className="flex items-center p-5">
-    <button type="button" className="w-full border-l border-t border-b font-bold font-nunito rounded-l-xl  hover:bg-yellow-500 hover:text-white px-4 py-2">
-        Troceado
-    </button>
-    <button type="button" className="w-full border font-nunito font-bold  hover:bg-yellow-500 hover:text-white px-4 py-2">
-        Tostado
-    </button>
-    <button type="button" className="w-full border-t border-b border-r  rounded-r-xl font-nunito font-bold  hover:bg-yellow-500 hover:text-white px-4 py-2">
-        Celiaco
-    </button>
-</div>
+    
 
-<div className="flex justify-center">
-    <nav
-        className="flex overflow-x-auto items-center p-1 space-x-1 rtl:space-x-reverse text-sm text-gray-600 bg-gray-500/5 rounded-xl">
-        <button role="tab" type="button"
-            className="flex whitespace-nowrap items-center h-8 px-5 font-medium rounded-lg outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-inset text-yellow-600 shadow bg-white dark:bg-yellow-600"
-            aria-selected="">
-            Sin salsa
-        </button>
 
-        <button role="tab" type="button"
-            className="flex whitespace-nowrap items-center h-8 px-5 font-medium rounded-lg outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-inset hover:text-gray-800 focus:text-yellow-600 dark:text-gray-400 dark:hover:text-gray-300 dark:focus:text-gray-400">
-           Extra Salsa
-        </button>
-    </nav>
-</div>
-
+      
+         
 
 
 
