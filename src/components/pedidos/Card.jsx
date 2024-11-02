@@ -39,13 +39,13 @@ import { dataContext } from '../Context/DataContext'
       
                    {/*tarjeta 1 */}
                 <div className="p-4 max-w-sm" >
-                <div className="flex rounded-lg  bg-white shadow-2xl p-8 flex-col">
+                <div className="flex rounded-lg  bg-[#293F48] shadow-2xl p-8 flex-col">
                     <div className="flex items-center justify-center mb-1">  
                     <p className="text-gray-500 font-extrabold truncate text-lg font-nunito">{product.name}</p>
                     </div>
       
       
-                    <div className="flex flex-col justify-between flex-grow">
+                    <div className="flex flex-col justify-between ">
                       
                     <img src={product.imagen} alt={product.name} className='h-20' />
       
