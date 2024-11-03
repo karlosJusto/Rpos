@@ -18,16 +18,15 @@ import { dataContext } from '../Context/DataContext'
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const handleShow = (product) => setShow(product);
 
 
 
 
  
-      const { data }=useContext(dataContext);
+    const { data }=useContext(dataContext);
 
 
-      return data.map((product) => {
 
        
 
@@ -35,7 +34,8 @@ import { dataContext } from '../Context/DataContext'
           
           <>
          
-          <div onClick={handleShow}  key={product.id} >
+         { data.map((product) => (
+          <div  key={product.id} onClick={() => handleShow(product)} >
       
       
                    {/*tarjeta 1 */}
@@ -76,20 +76,15 @@ import { dataContext } from '../Context/DataContext'
             
          
           </div>
+          ))}
       
-        
-            <ModalProductos show={show} handleClose ={handleClose} />
+          <ModalProductos show={show} handleClose ={handleClose} product={show} />
+           
             </>  
+            
         ); 
-    });
+   
 
   };
-
-     
-
-     
-      
-    
-  
 
 export default Card

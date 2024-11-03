@@ -12,7 +12,9 @@ import vegetariano from '../../assets/vegetariano.png'
 import { useState } from 'react';
 
 
-const ModalProductos = ({show, handleClose}) => {
+const ModalProductos = ({show, handleClose, product}) => {
+
+  console.log(product);
 
     {/*Estado contador*/}
 
@@ -26,8 +28,10 @@ const ModalProductos = ({show, handleClose}) => {
         if (clickCount>1){
         setClickCount(clickCount-1)};
     }
-   
 
+  
+   
+    
   
 
 
@@ -49,10 +53,10 @@ const ModalProductos = ({show, handleClose}) => {
         <Modal.Body>
         
         <div className='flex -mt-6 '>
-            <img src={patatassin} alt="plato comida" className='w-52 h-42 object-cover pr-7' />
+            <img src={product.imagen} alt="plato comida" className='w-52 h-42 object-cover pr-7' />
             <div>
-                <h1  className='font-nunito text-3xl font-extrabold text-gray-900 pb-3'> Patatas Fritas</h1>
-                <h3 className='font-nunito text-lg text-gray-400 '>Delicioso pollo de la mejor calidad recien hecho y acompañado de nuestra sabrosa salsa  </h3>
+                <h1  className='font-nunito text-3xl font-extrabold text-gray-900 pb-3'>{product.name}</h1>
+                <h3 className='font-nunito text-lg text-gray-400 '>{product.description}  </h3>
                 <div className='border-b-2 pt-3'></div>
             </div>     
         </div>   

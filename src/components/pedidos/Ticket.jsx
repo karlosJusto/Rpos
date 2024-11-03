@@ -1,6 +1,7 @@
 import patatassin from '../../assets/patatassin.png';
 import ModalClientes from './ModalClientes';
 import { useState } from 'react';
+import ModalProductos from './ModalProductos';
 
 const Ticket = () => {
 
