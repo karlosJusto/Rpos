@@ -7,6 +7,7 @@ import vegetariano from '../../assets/vegetariano.png'
 
 import { useState, useContext } from 'react'
 import { dataContext } from '../Context/DataContext'
+import { DiCelluloid } from 'react-icons/di'
 
 
 
@@ -22,13 +23,9 @@ import { dataContext } from '../Context/DataContext'
 
 
 
-
  
     const { data }=useContext(dataContext);
 
-
-
-       
 
         return (
           
@@ -37,7 +34,8 @@ import { dataContext } from '../Context/DataContext'
          { data.map((product) => (
           <div  key={product.id} onClick={() => handleShow(product)} >
       
-      
+            
+
                    {/*tarjeta 1 */}
                 <div className="p-4 max-w-sm" >
                 <div className="flex rounded-lg  bg-[#293F48] shadow-2xl p-8 flex-col">
@@ -52,13 +50,13 @@ import { dataContext } from '../Context/DataContext'
       
                     </div>
       
-                    <div className="flex items-center justify-center mt-1  gap-3 pt-2">
+                    <div className="flex items-center justify-center mt-1  gap-3 pt-2" >
 
                      
                                   
-                              <img src={vegano} alt="vegano" className="h-4 w-4 object-cover" />
-                              <img src={singluten} alt="celiaco" className="h-4 w-4 object-cover"/>
-                              <img src={vegetariano} alt="vegetariano" className="h-4 w-4 object-cover" />
+                              <div> {product.gluten_free ? (<img src={singluten} alt="vegano" className="h-4 w-4 object-cover" />):<div></div>}</div>
+                              <div> {product.vegan ? (<img src={vegano} alt="celiaco" className="h-4 w-4 object-cover"/>):<div></div>}</div>
+                              <div> {product.vegetarian ? (<img src={vegetariano} alt="vegetariano" className="h-4 w-4 object-cover"/>):<div></div>}</div>
       
                     </div>
       

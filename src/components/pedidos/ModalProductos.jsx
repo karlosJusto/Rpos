@@ -14,7 +14,6 @@ import { useState } from 'react';
 
 const ModalProductos = ({show, handleClose, product}) => {
 
- 
 
     {/*Estado contador*/}
 
@@ -63,9 +62,9 @@ const ModalProductos = ({show, handleClose, product}) => {
 
             <div className="flex ms-[30px]  gap-3 p-3">
                             
-                            <img src={vegano} alt="vegano" className="h-6 w-6 object-cover" />
-                            <img src={singluten} alt="celiaco" className="h-6 w-6 object-cover"/>
-                            <img src={vegetariano} alt="vegetariano" className="h-6 w-6 object-cover" />
+                              <div> {product.gluten_free ? (<img src={singluten} alt="vegano" className="h-6 w-6 object-cover" />):<div></div>}</div>
+                              <div> {product.vegan ? (<img src={vegano} alt="celiaco" className="h-6 w-6 object-cover"/>):<div></div>}</div>
+                              <div> {product.vegetarian ? (<img src={vegetariano} alt="vegetariano" className="h-6 w-6 object-cover"/>):<div></div>}</div>
     
             </div>
 
