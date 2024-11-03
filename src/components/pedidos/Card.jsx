@@ -50,13 +50,13 @@ import { DiCelluloid } from 'react-icons/di'
       
                     </div>
       
-                    <div className="flex items-center justify-center mt-1  gap-3 pt-2" >
+                    <div className="flex items-center justify-center  mt-1  gap-3 pt-2 h-6" >
 
                      
                                   
-                              <div> {product.gluten_free ? (<img src={singluten} alt="vegano" className="h-4 w-4 object-cover" />):<div></div>}</div>
-                              <div> {product.vegan ? (<img src={vegano} alt="celiaco" className="h-4 w-4 object-cover"/>):<div></div>}</div>
-                              <div> {product.vegetarian ? (<img src={vegetariano} alt="vegetariano" className="h-4 w-4 object-cover"/>):<div></div>}</div>
+                              <div> {product.gluten_free ? (<img src={singluten} alt="vegano" className="h-5 w-5 object-cover" />):<div></div>}</div>
+                              <div> {product.vegan ? (<img src={vegano} alt="celiaco" className="h-5 w-5 object-cover"/>):<div></div>}</div>
+                              <div> {product.vegetarian ? (<img src={vegetariano} alt="vegetariano" className="h-5 w-5 object-cover"/>):<div></div>}</div>
       
                     </div>
       
