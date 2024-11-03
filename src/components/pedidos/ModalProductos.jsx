@@ -14,7 +14,7 @@ import { useState } from 'react';
 
 const ModalProductos = ({show, handleClose, product}) => {
 
-  console.log(product);
+ 
 
     {/*Estado contador*/}
 
