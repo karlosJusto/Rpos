@@ -21,15 +21,7 @@ const DataProvider = ({children}) => {
         getDocs(productosRef)
         .then((resp) => {
 
-            console.log("llego:"+categoria)
-            if(categoria){
-                console.log("filtar")
-            }else{
-
-                console.log("todo")
-            }
-
-          
+                      
             setData(
             resp.docs.map((doc) => {
 

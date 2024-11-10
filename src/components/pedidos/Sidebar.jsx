@@ -10,7 +10,14 @@ import freidora from '../../assets/iconos_sidebar/freidora.png'
 
 
 
+
+
 const Sidebar = () => {
+
+
+
+
+
   return (
    
         
