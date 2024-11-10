@@ -16,7 +16,7 @@ const Sidebar = () => {
         
       <ul className=" flex flex-col justify-between text-center items-center gap-3 ">
 
-              <Link className=" p-3 border-r-4 hover:border-r-yellow-500 active:border-r-yellow-500 " to={"/layout"}>
+              <Link className=" p-3 border-r-4 hover:border-r-yellow-500 active:border-r-yellow-500 " to={"/layout/comida"}>
               <img src={Home} alt="icono cart side" className="w-12" />
               <p className="font-nunito text-xs text-gray-900 font-extrabold ">Home</p>
                </Link>
