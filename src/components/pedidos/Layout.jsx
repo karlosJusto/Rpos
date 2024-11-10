@@ -7,7 +7,6 @@ import Ticket from "./Ticket"
 
 
 
-
 const Layout = () => {
     return (
     

@@ -19,6 +19,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/layout" element={<Layout />}/>
+        <Route path="/layout/:categoria" element={<Layout />}/>
         <Route path="/ordenes" element={<Ordenes />} />
         <Route path="/freidora" element={<Freidora />} />
         <Route path="/buscadorPedidos" element={<BuscadorPedidos />} />

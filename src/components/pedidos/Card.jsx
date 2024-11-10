@@ -8,6 +8,8 @@ import vegetariano from '../../assets/vegetariano.png'
 import { useState, useContext } from 'react'
 import { dataContext } from '../Context/DataContext'
 import { DiCelluloid } from 'react-icons/di'
+import { Tabs } from 'react-bootstrap'
+import { useParams } from 'react-router-dom'
 
 
 
@@ -21,22 +23,32 @@ import { DiCelluloid } from 'react-icons/di'
     const handleClose = () => setShow(false);
     const handleShow = (product) => setShow(product);
 
+    const categoria=useParams().categoria;
 
-
- 
+    
     const { data }=useContext(dataContext);
 
 
+    const data_filter= categoria ? data.filter(product => product.categoria == categoria) : data;
+  
         return (
           
           <>
          
-         { data.map((product) => (
-          <div  key={product.id} onClick={() => handleShow(product)} >
-      
-            
+         { 
+         
+         
 
-                   {/*tarjeta 1 */}
+         data_filter.map((product) => (
+
+
+
+          
+
+          <div  key={product.id} onClick={() => handleShow(product)} >
+
+               
+              {/*tarjeta 1 */}
                 <div className="p-4 max-w-sm" >
                 <div className="flex rounded-lg  bg-[#293F48] shadow-2xl p-8 flex-col">
                     <div className="flex items-center justify-center mb-1">  
@@ -52,11 +64,17 @@ import { DiCelluloid } from 'react-icons/di'
       
                     <div className="flex items-center justify-center  mt-1  gap-3 pt-2 h-6" >
 
-                     
+                    {product.gluten_free && (
+                          <img src={singluten} alt="vegano" className="h-5 w-5 object-cover" />
+                        )}
+                        {product.vegan && (
+                          <img src={vegano} alt="celiaco" className="h-5 w-5 object-cover" />
+                        )}
+                        {product.vegetarian && (
+                          <img src={vegetariano} alt="vegetariano" className="h-5 w-5 object-cover" />
+                        )}
                                   
-                              <div> {product.gluten_free ? (<img src={singluten} alt="vegano" className="h-5 w-5 object-cover" />):<div></div>}</div>
-                              <div> {product.vegan ? (<img src={vegano} alt="celiaco" className="h-5 w-5 object-cover"/>):<div></div>}</div>
-                              <div> {product.vegetarian ? (<img src={vegetariano} alt="vegetariano" className="h-5 w-5 object-cover"/>):<div></div>}</div>
+                            
       
                     </div>
       
@@ -77,6 +95,7 @@ import { DiCelluloid } from 'react-icons/di'
           ))}
       
           <ModalProductos show={show} handleClose ={handleClose} product={show} />
+         
            
             </>  
             

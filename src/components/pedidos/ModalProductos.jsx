@@ -1,7 +1,7 @@
 
-import patatassin from '../../assets/patatassin.png'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import Form from 'react-bootstrap/Form';
 
 
 import singluten from '../../assets/singluten.png'
@@ -27,12 +27,6 @@ const ModalProductos = ({show, handleClose, product}) => {
         if (clickCount>1){
         setClickCount(clickCount-1)};
     }
-
-  
-   
-    
-  
-
 
   return (
     <>
@@ -60,11 +54,17 @@ const ModalProductos = ({show, handleClose, product}) => {
             </div>     
         </div>   
 
-            <div className="flex ms-[30px]  gap-3 p-3">
+            <div className="flex ms-[30px] gap-3 p-3">
                             
-                              <div> {product.gluten_free ? (<img src={singluten} alt="vegano" className="h-6 w-6 object-cover" />):<div></div>}</div>
-                              <div> {product.vegan ? (<img src={vegano} alt="celiaco" className="h-6 w-6 object-cover"/>):<div></div>}</div>
-                              <div> {product.vegetarian ? (<img src={vegetariano} alt="vegetariano" className="h-6 w-6 object-cover"/>):<div></div>}</div>
+                        {product.gluten_free && (
+                          <img src={singluten} alt="vegano" className="h-6 w-6 object-cover " />
+                        )}
+                        {product.vegan && (
+                          <img src={vegano} alt="celiaco" className="h-6 w-6 object-cover" />
+                        )}
+                        {product.vegetarian && (
+                          <img src={vegetariano} alt="vegetariano" className="h-6 w-6 object-cover" />
+                        )}
     
             </div>
 
@@ -83,7 +83,34 @@ const ModalProductos = ({show, handleClose, product}) => {
         <h4 className="text-2xl  font-extrabold font-nunito">
             Opciones
         </h4>
-     </div>
+    </div>
+
+
+    <div className='text-center justify-center items-center font-nunito text-2xl p-4'>
+
+    <Form>
+      {['radio'].map((type) => (
+        <div key={`inline-${type}`} className="mb-3 ">
+          <Form.Check
+            inline
+            label="Sin salsa"
+            name="group1"
+            type={type}
+            id={`inline-${type}-1`}
+          />
+          <Form.Check
+            inline
+            label="Extra Salsa"
+            name="group1"
+            type={type}
+            id={`inline-${type}-2`}
+            className='bg-red'
+          />
+         
+        </div>
+      ))}
+    </Form>
+    </div>
 
     
 
