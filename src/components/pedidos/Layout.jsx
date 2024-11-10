@@ -32,7 +32,7 @@ const Layout = () => {
               </div>
 
 
-              <div className=" bg-gradient-to-r from-gray-100 to-gray-300 text-center  w-[63%] rounded-xl overflow-y-auto mt-2 ">
+              <div className=" bg-gradient-to-r from-gray-100 to-gray-300 text-center  w-[63%] rounded-xl overflow-y-auto mt-2 mb-36">
                 
                       <div className="grid grid-cols-4  ">
 
