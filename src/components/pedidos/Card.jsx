@@ -1,5 +1,5 @@
 import ModalProductos from './ModalProductos' 
-import patatassin from '../../assets/patatassin.png'
+import pollo from '../../assets/pollo.jpg'
 import singluten from '../../assets/singluten.png'
 import vegano from '../../assets/vegano.png'
 import vegetariano from '../../assets/vegetariano.png'
@@ -49,20 +49,24 @@ import { useParams } from 'react-router-dom'
 
                
               {/*tarjeta 1 */}
-                <div className="p-4 max-w-sm" >
-                <div className="flex rounded-lg  bg-[#293F48] shadow-2xl p-8 flex-col">
-                    <div className="flex items-center justify-center mb-1">  
-                    <p className="text-gray-500 font-extrabold truncate text-lg font-nunito">{product.name}</p>
-                    </div>
-      
-      
-                    <div className="flex flex-col justify-between flex-grow">
+                <div className="p-3 max-w-xs" >
+                  <div className="flex rounded-lg  bg-[#293F48] shadow-2xl  flex-col">
+
+                  <div className="">
                       
-                    <img src={product.imagen} alt={product.name} className='h-20' />
-      
+                      <img src={pollo} alt={product.name} className='w-full rounded-t-lg object-cover ' />
+        
+                      </div>
+                    
+                    
+                    <div className="flex items-center justify-center  pr-2 pl-2 pt-1">  
+                    <p className="text-gray-100  truncate text-lg font-nunito">{product.name}</p>
                     </div>
       
-                    <div className="flex items-center justify-center  mt-1  gap-3 pt-2 h-6" >
+      
+                    
+      
+                    <div className="flex items-center justify-center gap-3 mt-2 h-6" >
 
                     {product.gluten_free && (
                           <img src={singluten} alt="vegano" className="h-5 w-5 object-cover" />
@@ -78,13 +82,13 @@ import { useParams } from 'react-router-dom'
       
                     </div>
       
-                    <div className="flex items-center justify-center mt-2 ">
+                    <div className="flex items-center justify-center mt-3 ">
                                   
                                   <h2 className="text-gray-300 dark:text-gray-300 text-md font-medium font-nunito">Stock: <span>6</span></h2>
                     </div>
-                              <div className="flex items-center justify-end mb-1">
+                              <div className="flex items-center justify-end mb-1 pr-2">
                                   
-                                  <h2 className=" text-lg font-extrabold font-nunito pt-2">{product.price} €</h2>
+                                  <h2 className=" text-lg font-extrabold text-gray-100  font-nunito pt-2">{product.price} €</h2>
                               </div>
                       </div>
                 </div>

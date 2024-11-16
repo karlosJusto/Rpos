@@ -10,6 +10,7 @@ import vegetariano from '../../assets/vegetariano.png'
 
 
 import { useState } from 'react';
+import Prueba from './Prueba';
 
 
 const ModalProductos = ({show, handleClose, product}) => {
@@ -88,29 +89,69 @@ const ModalProductos = ({show, handleClose, product}) => {
 
     <div className='text-center justify-center items-center font-nunito text-2xl p-4'>
 
-    <Form>
-      {['radio'].map((type) => (
-        <div key={`inline-${type}`} className="mb-3 ">
-          <Form.Check
-            inline
-            label="Sin salsa"
-            name="group1"
-            type={type}
-            id={`inline-${type}-1`}
-          />
-          <Form.Check
-            inline
-            label="Extra Salsa"
-            name="group1"
-            type={type}
-            id={`inline-${type}-2`}
-            className='bg-red'
-          />
-         
-        </div>
-      ))}
-    </Form>
+          <Form>
+            {['radio'].map((type) => (
+              <div key={`inline-${type}`} className="mb-3 ">
+                <Form.Check
+                  inline
+                  label="Sin salsa"
+                  name="group1"
+                  type={type}
+                  id={`inline-${type}-1`}
+                  className='p-2 border-2'
+                />
+                <Form.Check
+                  inline
+                  label="Extra Salsa"
+                  name="group1"
+                  type={type}
+                  id={`inline-${type}-2`}
+                  className='bg-red'
+                />
+              
+              </div>
+            ))}
+          </Form>
     </div>
+
+    <div className='text-center justify-center items-center font-nunito text-2xl p-4'>
+
+      <Form >
+        {['checkbox'].map((type) => (
+          <div key={`inline-${type}`} className="mb-3 ">
+            <Form.Check
+              inline
+              label="Tostado"
+              name="group2"
+              type={type}
+              id={`inline-${type}-1`}
+            />
+            <Form.Check 
+              inline
+              label="Troceado"
+              name="group2"
+              type={type}
+              id={`inline-${type}-2`}
+             
+            />
+
+            <Form.Check
+                    inline
+                    label="Celiaco"
+                    name="group2"
+                    type={type}
+                    id={`inline-${type}-3`}
+                    
+                  />
+          
+          </div>
+        ))}
+      </Form>
+
+      <Prueba  />
+
+      
+</div>
 
     
 
