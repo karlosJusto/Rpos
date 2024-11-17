@@ -29,7 +29,12 @@ import { useParams } from 'react-router-dom'
     const { data }=useContext(dataContext);
 
 
+
     const data_filter= categoria ? data.filter(product => product.categoria == categoria) : data;
+    
+    data_filter.sort((a, b) => {
+      return a.position - b.position;
+    });
   
         return (
           
@@ -45,12 +50,14 @@ import { useParams } from 'react-router-dom'
 
           
 
+
+
           <div  key={product.id} onClick={() => handleShow(product)} >
 
                
               {/*tarjeta 1 */}
-                <div className="p-3 max-w-xs" >
-                  <div className="flex rounded-lg  bg-[#293F48] shadow-2xl  flex-col">
+                <div className="p-3 max-w-xs " >
+                  <div className="flex  shadow-xl  flex-col  ">
 
                   <div className="">
                       
@@ -58,8 +65,8 @@ import { useParams } from 'react-router-dom'
         
                       </div>
                     
-                    
-                    <div className="flex items-center justify-center  pr-2 pl-2 pt-1">  
+                   <div className='bg-[#293F48] rounded-b-lg '>
+                    <div className="flex items-center justify-center  pr-2 pl-2 pt-1 mt-1">  
                     <p className="text-gray-100  truncate text-lg font-nunito">{product.name}</p>
                     </div>
       
@@ -88,11 +95,11 @@ import { useParams } from 'react-router-dom'
                     </div>
                               <div className="flex items-center justify-end mb-1 pr-2">
                                   
-                                  <h2 className=" text-lg font-extrabold text-gray-100  font-nunito pt-2">{product.price} €</h2>
+                                  <h2 className=" text-lg font-extrabold text-gray-100  font-nunito pt-2">{product.price.toFixed(2)} €</h2>
                               </div>
                       </div>
                 </div>
-         
+                </div> 
             
          
           </div>

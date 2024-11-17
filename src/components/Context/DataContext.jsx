@@ -10,6 +10,10 @@ export const dataContext = createContext();
 const DataProvider = ({children}) => {
 
     const [data, setData]=useState([]);
+    const [cart, setCart]=useState([]);
+
+
+
     const categoria=useParams().categoria;
    
 
@@ -45,7 +49,7 @@ const DataProvider = ({children}) => {
     return (
         
 
-        <dataContext.Provider value={{data}}>{children}</dataContext.Provider>
+        <dataContext.Provider value={{data, cart, setCart}}>{children}</dataContext.Provider>
 
     )
 

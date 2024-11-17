@@ -9,11 +9,22 @@ import vegano from '../../assets/vegano.png'
 import vegetariano from '../../assets/vegetariano.png'
 
 
-import { useState } from 'react';
+import { useState, useContext} from 'react';
 import Prueba from './Prueba';
+import {  dataContext } from '../Context/DataContext';
 
 
 const ModalProductos = ({show, handleClose, product}) => {
+
+  const {data, cart, setCart}=useContext(dataContext);
+
+  const buyProducts = (product) => {
+
+   
+      setCart([...cart,product]);    
+      handleClose()
+
+  };
 
 
     {/*Estado contador*/}
@@ -167,7 +178,7 @@ const ModalProductos = ({show, handleClose, product}) => {
           <Button variant="secondary" className='p-3 bg-white font-nunito text-gray-500' onClick={handleClose} >
             Cancelar
           </Button>
-          <Button variant="primary" onClick={handleClose} className='bg-yellow-500 border-yellow-500 hover:bg-yellow-600 hover:border-yellow-600 p-3 font-nunito'>Agregar</Button>
+          <Button variant="primary" onClick={() => buyProducts(product)} className='bg-yellow-500 border-yellow-500 hover:bg-yellow-600 hover:border-yellow-600 p-3 font-nunito'>Agregar</Button>
         </Modal.Footer>
       </Modal>
 
