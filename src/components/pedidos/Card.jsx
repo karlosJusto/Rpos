@@ -1,5 +1,5 @@
 import ModalProductos from './ModalProductos' 
-import pollo from '../../assets/pollo.jpg'
+
 import singluten from '../../assets/singluten.png'
 import vegano from '../../assets/vegano.png'
 import vegetariano from '../../assets/vegetariano.png'
@@ -32,8 +32,10 @@ import { useParams } from 'react-router-dom'
 
     const data_filter= categoria ? data.filter(product => product.categoria == categoria) : data;
     
+    
     data_filter.sort((a, b) => {
       return a.position - b.position;
+      
     });
   
         return (
@@ -47,25 +49,20 @@ import { useParams } from 'react-router-dom'
          data_filter.map((product) => (
 
 
-
-          
-
-
-
           <div  key={product.id} onClick={() => handleShow(product)} >
 
                
               {/*tarjeta 1 */}
                 <div className="p-3 max-w-xs " >
-                  <div className="flex  shadow-xl  flex-col  ">
+                  <div className="flex  shadow-xl flex-col  rounded-xl border-2 border-gray-300 ">
 
                   <div className="">
                       
-                      <img src={pollo} alt={product.name} className='w-full rounded-t-lg object-cover ' />
+                      <img src={product.imagen_rpos} alt={product.name} className='w-full rounded-t-xl object-cover  ' />
         
                       </div>
                     
-                   <div className='bg-[#293F48] rounded-b-lg '>
+                   <div className='bg-[#293F48] rounded-b-xl '>
                     <div className="flex items-center justify-center  pr-2 pl-2 pt-1 mt-1">  
                     <p className="text-gray-100  truncate text-lg font-nunito">{product.name}</p>
                     </div>

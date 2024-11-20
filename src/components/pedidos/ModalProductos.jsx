@@ -16,21 +16,47 @@ import {  dataContext } from '../Context/DataContext';
 
 const ModalProductos = ({show, handleClose, product}) => {
 
+  
+
   const {data, cart, setCart}=useContext(dataContext);
 
   const buyProducts = (product) => {
 
+    
+
+    const productRepetido = cart.find((item) => item.id_product === product.id_product);
+    if (productRepetido) {
+      
+      
+      //setCart(cart.map((item) => (item.id_product === product.id_product ? { ...item, cantidad: productRepetido.cantidad + clickCount } : item)));
+      setCart(cart.map((item) => (item.id_product === product.id_product ? { ...item, cantidad: clickCount } : item)));
+
+    }else{
+      
+      setCart([...cart, { ...product, cantidad: clickCount }]);
+
+    }
    
-      setCart([...cart,product]);    
+    
+  
+    setClickCount(1);
+
+ 
+
+      
       handleClose()
 
   };
 
 
+  
+ 
+
     {/*Estado contador*/}
 
     const [clickCount, setClickCount]=useState(1);
 
+    
     const sumar = () => {
         setClickCount(clickCount+1);
     }
@@ -39,6 +65,8 @@ const ModalProductos = ({show, handleClose, product}) => {
         if (clickCount>1){
         setClickCount(clickCount-1)};
     }
+
+    //console.log(product);
 
   return (
     <>

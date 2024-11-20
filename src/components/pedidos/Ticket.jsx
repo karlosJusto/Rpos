@@ -30,7 +30,7 @@ const Ticket = () => {
             return (
 
                 <>
-                <div className="w-full max-w-md  p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 dark:bg-gray-100 dark:border-gray-100 ">
+                <div className="w-full max-w-md  p-4 bg-zinc-200 border border-gray-200 rounded-3xl shadow-lg  ">
                   
               <div  onClick={handleShow}>
                 <div  className="border-2 border-gray-400 p-4 rounded-xl font-nunito"  >
@@ -54,6 +54,17 @@ const Ticket = () => {
                    
                    <CartElements/>
                    <CartTotal/>
+
+
+                
+
+
+
+
+
+
+
+
         </div>
         
                   <ModalClientes show={show} handleClose={handleClose} />

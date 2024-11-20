@@ -10,7 +10,7 @@ import Ticket from "./Ticket"
 const Layout = () => {
     return (
     
-      <div className="3xl:container 2xl:mx-auto max-w-[1600px]  ">
+      <div className="3xl:container 2xl:mx-auto max-w-[1800px]  ">
 
           <header >
 
@@ -25,7 +25,7 @@ const Layout = () => {
           </nav>
 
            <div className=" flex h-screen ">
-              <div className=" w-[7%] mt-2">
+              <div className=" w-[7%] m-2 bg-[#E4E6F0]">
                 
               <Sidebar/>
                 

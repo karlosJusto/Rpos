@@ -2,10 +2,13 @@
 
 
 
-const ElementsCantidad = () => {
+const ElementsCantidad = ({cantidad}) => {
+
+
+
   return (
-    <div>ElementsCantidad</div>
+    <span className="ms-3 whitespace-nowrap"><span>{cantidad}</span> x </span>
   )
 }
 
-export default ElementsCantidad
+export default ElementsCantidad 
